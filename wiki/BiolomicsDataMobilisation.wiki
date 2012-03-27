@@ -1,0 +1,41 @@
+#summary Information about exporting data from BioloMICS.
+
+= Introduction =
+
+There are two recommended methods for exporting 'shared data' from BioloMICS. Both use features from within the application, so there is no need to access the backend database MySQL.
+
+== Method 1 - Export without Template. ==
+Recommended if you are sharing minimal data from every record (for example a list of strain numbers and species names held in the collection). [#Export_without_Template More details]
+
+== Method 2 - Amend VB.NET script. ==
+Recommended if you want to hold back reference to particular records, or provide more detailed information (for example, images and bibliographic records). [#Amend_VB.NET_script More Details]
+
+=Export without Template=
+Log in to BioloMICS, and the database you want to share. Select menu item:
+{{{
+Import-Export -> Export all records -> To file without template
+}}}
+
+http://ala.googlecode.com/files/wiki-biolomics-export.png
+
+At the 'Export file without template' window, click fields in the left pane and the right-pointing arrow. Fields for sharing will then show in the right pane. Use the left-pointing arrow to remove fields if you make a mistake.
+
+http://ala.googlecode.com/files/wiki-biolomics-export2.png
+
+Click the 'Export and close' button and save the output file as CSV or tab-delimited. You can check the file contents with an application like Excel or Notepad. It will show the column headers, and a single row for every record, similar to:
+
+||ID	||Name	||E394: Species name	||H410: Sample date||
+||2	||TT 1	||Arxiozyma telluris	||Feb-03||
+||3	||TT 2	||Candida albicans	||Feb-00||
+||4	||TT 3	||Candida albicans	||28/04/2000||
+||5	||TT 4	||Candida albicans (stellatoidea)	||19/05/2000||
+ 
+
+
+=Amend VB.NET script=
+
+#Export layout definition
+#Amend script section
+#Launch 'Tools -> BioloMICS programming manager'
+#Import
+#Run
