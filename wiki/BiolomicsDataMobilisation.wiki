@@ -11,18 +11,15 @@ Recommended if you are sharing minimal data from every record (for example a lis
 Recommended if you want to hold back reference to particular records, or provide more detailed information (for example, images and bibliographic records). [#Amend_VB.NET_script More Details]
 
 =Export without Template=
-Log in to BioloMICS, and the database you want to share. Select menu item:
-{{{
-Import-Export -> Export all records -> To file without template
-}}}
+Log in to BioloMICS, and the database you want to share. Select menu item `Import-Export -> Export all records -> To file without template`:
 
 http://ala.googlecode.com/files/wiki-biolomics-export.png
 
-At the 'Export file without template' window, click fields in the left pane and the right-pointing arrow. Fields for sharing will then show in the right pane. Use the left-pointing arrow to remove fields if you make a mistake.
+At the `Export file without template` window, click fields in the left pane and the right-pointing arrow. Fields for sharing will then show in the right pane. Use the left-pointing arrow to remove fields if you make a mistake.
 
 http://ala.googlecode.com/files/wiki-biolomics-export2.png
 
-Click the 'Export and close' button and save the output file as CSV or tab-delimited. You can check the file contents with an application like Excel or Notepad. It will show the column headers, and a single row for every record, similar to:
+Click the `Export and close` button and save the output file as CSV or tab-delimited. You can check the file contents with an application like Excel or Notepad. It will show the column headers, and a single row for every record, similar to:
 
 ||ID	||Name	||E394: Species name	||H410: Sample date||
 ||2	||TT 1	||Arxiozyma telluris	||Feb-03||
@@ -36,6 +33,6 @@ Click the 'Export and close' button and save the output file as CSV or tab-delim
 
 #Export layout definition
 #Amend script section
-#Launch 'Tools -> BioloMICS programming manager'
+#Launch `Tools -> BioloMICS programming manager`
 #Import
 #Run
