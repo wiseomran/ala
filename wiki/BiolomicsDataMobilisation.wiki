@@ -4,11 +4,8 @@
 
 There are two recommended methods for exporting 'shared data' from BioloMICS. Both use features from within the application, so there is no need to access the backend database MySQL.
 
-== Method 1 - Export without Template. ==
-Recommended if you are sharing minimal data from every record (for example a list of strain numbers and species names held in the collection). [#Export_without_Template More details]
-
-== Method 2 - Amend VB.NET script. ==
-Recommended if you want to hold back reference to particular records, or provide more detailed information (for example, images and bibliographic records). [#Amend_VB.NET_script More Details]
+ # [#Export_without_Template Method 1 - Export without Template]. Recommended if you are sharing minimal data from every record (for example a list of strain numbers and species names held in the collection). 
+ # [#Amend_VB.NET_script Method 2 - Amend VB.NET script]. Recommended if you want to hold back reference to particular records, or provide more detailed information (for example, images and bibliographic records). 
 
 =Export without Template=
 Log in to BioloMICS, and the database you want to share. Select menu item `Import-Export -> Export all records -> To file without template`:
