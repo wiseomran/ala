@@ -31,8 +31,8 @@ Click the `Export and close` button and save the output file as CSV or tab-delim
 
 =Amend VB.NET script=
 
- #Export layout definition
- #Amend script section
- #Launch `Tools -> BioloMICS programming manager`
- #Import
- #Run
+ # Export layout definition
+ # Amend script section
+ # Launch `Tools -> BioloMICS programming manager`
+ # Import
+ # Run
