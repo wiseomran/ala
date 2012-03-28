@@ -73,6 +73,7 @@ Make sure the script is selected so the `BioloMICS Code Editor` shows content.
 Click the green arrow, or menu item `Build -> Compile and run`.
 
 The script will prompt for a directory to write the output to. Select or create a folder:
+
 http://ala.googlecode.com/files/wiki-biolomics-script4.png
 
 Trace statements show progress through the file writing process in the `Compilation results and errors` pane.
