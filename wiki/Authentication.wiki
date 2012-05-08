@@ -1,0 +1,5 @@
+#summary Authentication & authorisation
+
+The Atlas uses the [http://www.jasig.org/cas Central Authentication Service] to provide single sign-on authentication for ALA applications. The app integration of CAS is described [http://code.google.com/p/ala-bie/wiki/Authentication here].
+
+Emmet is used to manage roles for users.
