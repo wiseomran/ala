@@ -4,15 +4,9 @@
 [GettingStarted Getting started]
 
 Common webapp infrastructure
-
  * [Authentication]
-
  * [HeaderFooter Header, menu and footer]
-
  * [Styles Stylesheets, images and scripts]
-
  * [Feedback Feedback services]
-
  * [Logging]
-
  * [Charts Charts package]
