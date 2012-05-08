@@ -1,0 +1,5 @@
+#summary Pre-built charts for displaying facets of occurrence records
+
+=Charts package=
+
+Currently described [http://code.google.com/p/ala-collectory/wiki/ChartsPackage here].
