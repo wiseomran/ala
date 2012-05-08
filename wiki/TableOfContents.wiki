@@ -2,4 +2,14 @@
 
 [GettingStarted Getting started]
 
-[AtlasWebInfrastructure Common webapp infrastructure]
+Common webapp infrastructure
+
+  * [Authentication]
+
+  * [HeaderFooter Header, menu and footer]
+
+  * [Styles Stylesheets, images and scripts]
+
+  * [Feedback Feedback services]
+
+  * [Logging]
