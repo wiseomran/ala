@@ -4,12 +4,12 @@
 
 Common webapp infrastructure
 
-  * [Authentication]
+ * [Authentication]
 
-  * [HeaderFooter Header, menu and footer]
+ * [HeaderFooter Header, menu and footer]
 
-  * [Styles Stylesheets, images and scripts]
+ * [Styles Stylesheets, images and scripts]
 
-  * [Feedback Feedback services]
+ * [Feedback Feedback services]
 
-  * [Logging]
+ * [Logging]
