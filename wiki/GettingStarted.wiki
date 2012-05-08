@@ -1,4 +1,5 @@
 #summary Documentation and component guide
+#labels Documentation
 
 = Atlas of Living Australia =
 
