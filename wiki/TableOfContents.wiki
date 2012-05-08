@@ -2,4 +2,4 @@
 
 [GettingStarted Getting started]
 
-[AtlasWebappInfrastructure Common webapp infrastructure]
+[AtlasWebInfrastructure Common webapp infrastructure]
