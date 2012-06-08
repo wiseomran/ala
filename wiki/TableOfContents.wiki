@@ -12,5 +12,5 @@ Common webapp infrastructure
  * [Charts Charts package]
 
 
-Other dock
+Other doco
 * [GrailsGetStarted]
