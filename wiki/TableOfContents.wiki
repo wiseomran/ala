@@ -10,3 +10,7 @@ Common webapp infrastructure
  * [Feedback Feedback services]
  * [Logging]
  * [Charts Charts package]
+
+
+Other dock
+* [GrailsGetStarted]
