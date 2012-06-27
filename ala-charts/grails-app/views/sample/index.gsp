@@ -37,7 +37,7 @@
         </div>
         <div style="padding-bottom: 8px;">
             <g:radio name="type" value="assertions"/> Data assertions
-            <g:radio name="type" value="occurrence_year"/> Decades
+            <g:radio name="type" value="decade"/> Decades
             <g:radio name="type" value="biogeographic_region"/> Biogeographic region
             <g:radio name="type" value="state_conservation"/> State conservation
         </div>
