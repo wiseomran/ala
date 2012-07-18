@@ -90,7 +90,8 @@ var baseFacetChart = {
         var gChartOptions = {},
             that = this;
         $.each(['width','height','chartArea','is3D','titleTextStyle','sliceVisibilityThreshold','legend',
-            'hAxis','vAxis','title','colors','reverseCategories','fontSize'], function (i,prop) {
+            'hAxis','vAxis','title','colors','reverseCategories','fontSize','backgroundColor','axisTitlesPosition',
+            'fontName','focusTarget','titlePosition','tooltip'], function (i,prop) {
             if (that[prop] != undefined) {
                 gChartOptions[prop] = that[prop];
             }
