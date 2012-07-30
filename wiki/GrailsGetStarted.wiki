@@ -2,17 +2,12 @@
 
 = Introduction =
 
-How to use the Grails template for the ALA.
-
-= Details =
-
-The template by default gives:
+How to use the Grails template for the ALA. The template by default gives:
 
  * Styling & default layout (header/footer)
  * CAS integration
 
-
-Steps to use this template:
+== Steps to use this template == 
 
  # Checkout: 
 {{{
