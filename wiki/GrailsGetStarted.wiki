@@ -16,5 +16,8 @@ http://code.google.com/p/ala/source/browse/#svn%2Ftrunk%2Fgetstarted
 Steps to use this template:
 
  # Checkout: svn co http://ala.googlecode.com/svn/trunk/getstarted  insert-project-name-here
- # Detach:   cd to insert-project-name-here and run "rm -rf `find . -type d -name .svn`" 
+ # Detach:   cd to insert-project-name-here and run 
+{{{
+rm -rf find .-type d -name ".svn"
+}}}
  # Code!
