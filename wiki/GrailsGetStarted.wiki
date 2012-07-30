@@ -8,10 +8,9 @@ How to use the Grails template for the ALA.
 
 The template by default gives:
 
-* Styling & default layout (header/footer)
-* CAS integration
+ * Styling & default layout (header/footer)
+ * CAS integration
 
-http://code.google.com/p/ala/source/browse/#svn%2Ftrunk%2Fgetstarted
 
 Steps to use this template:
 
