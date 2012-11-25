@@ -36,9 +36,6 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.16'
         build 'au.org.ala:ala-cas-client:1.0-SNAPSHOT'
         build 'org.jasig.cas:cas-client-core:3.1.10'
-        compile('org.codehaus.groovy.modules.http-builder:http-builder:0.5.0') {
-            excludes "commons-logging", "xml-apis", "groovy"
-        }
     }
 
     plugins {
