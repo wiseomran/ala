@@ -1,8 +1,8 @@
 
 /******* Change this stuff for your project *******/
-appName = 'phylojive'
+appName = 'getstarted'
 serverName='http://localhost:8080'
-contextPath='/phylojive'
+contextPath='/getstarted'
 security.cas.uriFilterPattern = ''
 /******* End of change this stuff for your project *******/
 
@@ -19,8 +19,6 @@ ala.baseURL = "http://www.ala.org.au"
 bie.baseURL = "http://bie.ala.org.au"
 bie.searchPath = "/search"
 grails.project.groupId = au.org.ala // change this to alter the default package name and Maven publishing destination
-identifyLifeUrl = "http://ala-ilife2.it.csiro.au/ds/search/scores/"
-
 /******* End of ALA standard config ************/
 
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
@@ -73,9 +71,8 @@ grails.hibernate.cache.queries = true
 // set per-environment serverURL stem for creating absolute links
 environments {
     development {
-        serverName = 'http://nickdos.ala.org.au:8080'
         grails.logging.jul.usebridge = true
-        grails.serverURL = 'http://nickdos.ala.org.au:8080/' + appName
+        grails.serverURL = 'http://localhost:8080/' + appName
     }
     production {
         grails.logging.jul.usebridge = false
@@ -97,16 +94,16 @@ log4j = {
 
         environments {
             production {
-                rollingFile name: "tomcatLog", maxFileSize: 102400000, file: "/var/log/tomcat6/phylojive.log", threshold: org.apache.log4j.Level.DEBUG, layout: pattern(conversionPattern: "%d %-5p [%c{1}] %m%n")
+                rollingFile name: "tomcatLog", maxFileSize: 102400000, file: "/var/log/tomcat6/getstarted.log", threshold: org.apache.log4j.Level.DEBUG, layout: pattern(conversionPattern: "%d %-5p [%c{1}] %m%n")
                 'null' name: "stacktrace"
             }
             development {
                 console name: "stdout", layout: pattern(conversionPattern: "%d %-5p [%c{1}]  %m%n"), threshold: org.apache.log4j.Level.DEBUG
-                rollingFile name: "tomcatLog", maxFileSize: 102400000, file: "/tmp/phylojive.log", threshold: org.apache.log4j.Level.DEBUG, layout: pattern(conversionPattern: "%d %-5p [%c{1}]  %m%n")
+                rollingFile name: "tomcatLog", maxFileSize: 102400000, file: "/tmp/getstarted.log", threshold: org.apache.log4j.Level.DEBUG, layout: pattern(conversionPattern: "%d %-5p [%c{1}]  %m%n")
                 'null' name: "stacktrace"
             }
             test {
-                rollingFile name: "tomcatLog", maxFileSize: 102400000, file: "/tmp/phylojive-test.log", threshold: org.apache.log4j.Level.DEBUG, layout: pattern(conversionPattern: "%d %-5p [%c{1}]  %m%n")
+                rollingFile name: "tomcatLog", maxFileSize: 102400000, file: "/tmp/getstarted-test.log", threshold: org.apache.log4j.Level.DEBUG, layout: pattern(conversionPattern: "%d %-5p [%c{1}]  %m%n")
                 'null' name: "stacktrace"
             }
         }
@@ -142,14 +139,9 @@ log4j = {
             'grails.app',
             'net',
             'grails.util.GrailsUtil'
-    warn    'org.mortbay.log',
-            'grails.app'
-    info    'grails.app'
 
-    environments {
-        development {
-            // Override previous setting for 'grails.app'
-            debug  'grails.app'
-        }
-    }
+    debug  'grails.app.domain.ala.postie',
+            'grails.app.controller.ala.postie',
+            'grails.app.service.ala.postie',
+            'grails.app.tagLib.ala.postie'
 }
