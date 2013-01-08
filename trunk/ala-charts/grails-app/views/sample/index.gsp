@@ -57,8 +57,8 @@
 <r:script type="text/javascript">
     var biocacheServicesUrl = "http://biocache.ala.org.au/ws";
     var biocacheWebappUrl = "http://biocache.ala.org.au/";
-    var taxonomyChartOptions = { rank: "kingdom", error: "badQuery" }
-    var facetChartOptions = { error: "badQuery" }
+    var taxonomyChartOptions = { rank: "kingdom", error: "badQuery" };
+    var facetChartOptions = { error: "badQuery"};
     $('#draw').click(drawChart);
     $('body').keypress(function(event) {
         if (event.which == 13) {
