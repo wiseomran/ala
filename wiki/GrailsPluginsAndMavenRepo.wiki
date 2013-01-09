@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+How to setup install a grails plugin in maven.ala.org.au so it can be used within other projects and dynamically downloaded for an initial build.
+
+= Details =
+
+ * {{{grails maven-install}}}
+
+this will require the [http://grails.org/plugin/release  grails release plugin]
+
+ * Manual SCP to the directory /data/maven/org/grails/plugins/
+
+{{{scp -r ../../.m2/repository/org/grails/plugins/ala-charts/0.2.3/* maven@maven.ala.org.au:/data/maven/org/grails/plugins/ala-charts/0.2.3/}}}
+
+ * For projects wishing to use the plugin, include the following in BuildConfig.groovy
+
+{{{ mavenRepo "http://maven.ala.org.au/repository/" }}}
