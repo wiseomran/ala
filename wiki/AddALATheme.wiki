@@ -1,0 +1,27 @@
+#summary Adding the ALA theme to a new project
+
+ * Run 
+
+{{{ grails createApp TestApp}}}
+
+ * cd to TestApp
+ * Edit grails-app/conf/BuildConfig.groovy
+ * Add to the repositories sections
+
+{{{ 
+repositories { 
+.....
+mavenRepo "http://maven.ala.org.au/repository/"  
+...
+}
+}}}
+
+ * Add the plugin as runtime e.g.
+
+ {{{ runtime ":ala-web-theme:0.2"  }}}
+
+ * Run:
+
+{{{ grails RunApp }}} 
+
+ 
