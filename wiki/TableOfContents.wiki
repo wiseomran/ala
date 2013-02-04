@@ -10,6 +10,7 @@ Common webapp infrastructure
  * [Feedback Feedback services]
  * [Logging]
  * [GrailsPluginsAndMavenRepo]
+ * [AddALATheme]
 
  * [Charts Charts package]
 
