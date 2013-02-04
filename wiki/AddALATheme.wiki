@@ -1,6 +1,6 @@
 #summary Adding the ALA theme to a new project
 
- * Run 
+ * Run the following the command-line (substituting in your new project name) 
 
 {{{ grails createApp TestApp}}}
 
