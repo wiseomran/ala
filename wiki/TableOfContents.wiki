@@ -9,8 +9,8 @@ Common webapp infrastructure
  * [Styles Stylesheets, images and scripts]
  * [Feedback Feedback services]
  * [Logging]
- * [GrailsPluginsAndMavenRepo]
- * [AddALATheme]
+ * [GrailsPluginsAndMavenRepo Grails Plugins and Maven Repositories]
+ * [AddALATheme ALA Theme Grails plugin]
  * [Charts Charts package]
 
 
