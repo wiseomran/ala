@@ -12,7 +12,3 @@ Common webapp infrastructure
  * [GrailsPluginsAndMavenRepo Grails Plugins and Maven Repositories]
  * [AddALATheme ALA Theme Grails plugin]
  * [Charts Charts package]
-
-
-Other doco
-* [GrailsGetStarted]
