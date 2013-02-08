@@ -1,11 +1,18 @@
 #summary Adding the ALA theme to a new project
 
- * Run the following the command-line (substituting in your new project name) 
+The `ala-web-theme` Grails plugin provides the following features to a Grails app:
+
+  * a default Sitemesh layout with ALA header, footer (including CSS, JS and images resources)
+  * a default index page for the webapp
+  * a separate config file `ala-config.groovy` in `grails-app/conf`
+  * CAS support for auth.ala.org.au integration (incluing libs and web.xml additions)
+
+To get started, cerate a blank Grails app (substituting in your new project name):
 
 {{{ grails createApp TestApp}}}
 
  * cd to TestApp
- * Edit grails-app/conf/BuildConfig.groovy
+ * Edit `grails-app/conf/BuildConfig.groovy`
  * Add to the repositories sections
 
 {{{ 
@@ -16,9 +23,9 @@ mavenRepo "http://maven.ala.org.au/repository/"
 }
 }}}
 
- * Add the plugin as runtime e.g.
+ * Add the plugin as runtime e.g. (check the latest version via [http://maven.ala.org.au/repository/org/grails/plugins/ala-web-theme/ maven repo])
 
- {{{ runtime ":ala-web-theme:0.2"  }}}
+ {{{ runtime ":ala-web-theme:0.1.3"  }}}
 
  * Run:
 
