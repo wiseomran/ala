@@ -37,27 +37,21 @@ grails.project.repos.'ala-repository'.password = "askSomeForThisPassword"
 
 3. Optionally compile project to get release plugin included:
 
-`grails compile`
+{{{
+grails compile
+}}}
 
 4. Deploy plugin to ALA maven server:
 
-`grails maven-deploy --repository='ala-repository'`
+{{{
+grails maven-deploy --repository='ala-repository'
+}}}
 
 5. Check that it worked by browsing to repository:
 
 http://maven.ala.org.au/repository/org/grails/plugins/
 
----
-
- # {{{grails maven-install}}}
-
-this will require the [http://grails.org/plugin/release  grails release plugin]
-
- # Manual SCP to the directory /data/maven/org/grails/plugins/
-
-{{{scp -r ../../.m2/repository/org/grails/plugins/ala-charts/0.2.3/* maven@maven.ala.org.au:/data/maven/org/grails/plugins/ala-charts/0.2.3/}}}
-
- # For projects wishing to use the plugin, include the following in BuildConfig.groovy
+6. For projects wishing to use the plugin, include the following in `BuildConfig.groovy`
 
 {{{ mavenRepo "http://maven.ala.org.au/repository/" }}}
 
