@@ -53,12 +53,18 @@ http://maven.ala.org.au/repository/org/grails/plugins/
 
 6. For projects wishing to use the plugin, include the following in `BuildConfig.groovy`
 
-{{{ mavenRepo "http://maven.ala.org.au/repository/" }}}
+{{{
+mavenRepo "http://maven.ala.org.au/repository/"
+}}}
 
  # Add a line like this to application.properties:
 
-{{{plugins.ala-charts=0.2.3}}}
+{{{
+plugins.ala-charts=0.2.3
+}}}
 
 or add the following to BuildConfig.groovy:
 
-{{{ runtime ":ala-charts:0.2.3" }}}
+{{{
+runtime ":ala-charts:0.2.3"
+}}}
