@@ -36,10 +36,10 @@ grails createApp TestApp
     }
 }}}
 
- * Run:
+ * Run the app via the built-in tomcat:
 
 {{{
 grails run-app
 }}} 
 
- 
+and as Grails output suggests, Browse to http://localhost:8080/TestApp
