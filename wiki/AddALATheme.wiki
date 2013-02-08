@@ -44,4 +44,4 @@ grails createApp TestApp
 grails run-app
 }}} 
 
-and as the Grails output suggests, browse to http://localhost:8080/TestApp
+and as the Grails output suggests, browse to http://localhost:8080/testApp
