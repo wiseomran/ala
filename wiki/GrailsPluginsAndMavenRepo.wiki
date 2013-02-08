@@ -19,7 +19,6 @@ grails.project.dependency.resolution = {
     }
 }
 grails.project.dependency.distribution = {
-    localRepository = "/data/maven"
     remoteRepository(id:"ala-repository", url:"scp://maven.ala.org.au:/data/maven") {
         // authentication is set via ~/.grails/settings.groovy
     }
