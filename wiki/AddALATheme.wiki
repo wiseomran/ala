@@ -1,5 +1,7 @@
 #summary Adding the ALA theme to a new project
 
+== `ala-web-theme` Grails plugin ==
+
 The `ala-web-theme` Grails plugin provides the following features to a Grails app:
 
   * a default Sitemesh layout with ALA header & footer (including CSS, JS and images resources)
@@ -42,4 +44,4 @@ grails createApp TestApp
 grails run-app
 }}} 
 
-and as Grails output suggests, Browse to http://localhost:8080/TestApp
+and as the Grails output suggests, browse to http://localhost:8080/TestApp
