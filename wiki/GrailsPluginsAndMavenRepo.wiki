@@ -57,13 +57,13 @@ http://maven.ala.org.au/repository/org/grails/plugins/
 mavenRepo "http://maven.ala.org.au/repository/"
 }}}
 
- # Add a line like this to application.properties:
+  * Add a line like this to application.properties:
 
 {{{
 plugins.ala-charts=0.2.3
 }}}
 
-or add the following to BuildConfig.groovy:
+  * or add the following to BuildConfig.groovy:
 
 {{{
 runtime ":ala-charts:0.2.3"
