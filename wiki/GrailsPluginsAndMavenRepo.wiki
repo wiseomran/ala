@@ -6,6 +6,49 @@ How to setup install a grails plugin in maven.ala.org.au so it can be used withi
 
 = Details =
 
+1. Configure plugin `BuildConfig.groovy` by adding:
+
+{{{ 
+grails.project.dependency.resolution = {
+    ...
+    plugins {
+        build(":tomcat:$grailsVersion",
+              ":release:2.0.3") {
+            export = false
+        }
+    }
+}
+grails.project.dependency.distribution = {
+    localRepository = "/data/maven"
+    remoteRepository(id:"ala-repository", url:"scp://maven.ala.org.au:/data/maven") {
+        // authentication is set via ~/.grails/settings.groovy
+    }
+}
+}}}
+
+2. Edit local Grails settings file in `~/.grails/settings.groovy`:
+
+{{{
+grails.project.repos.default = "ala-repository"
+grails.project.repos.'ala-repository'.url = "scp://maven.ala.org.au:/data/maven"
+grails.project.repos.'ala-repository'.username = "maven"
+grails.project.repos.'ala-repository'.password = "askSomeForThisPassword"
+}}}
+
+3. Optionally compile project to get release plugin included:
+
+`grails compile`
+
+4. Deploy plugin to ALA maven server:
+
+`grails maven-deploy --repository='ala-repository'`
+
+5. Check that it worked by browsing to repository:
+
+http://maven.ala.org.au/repository/org/grails/plugins/
+
+---
+
  # {{{grails maven-install}}}
 
 this will require the [http://grails.org/plugin/release  grails release plugin]
