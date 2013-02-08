@@ -20,16 +20,16 @@ grails createApp TestApp
  * Add to the repositories sections
 
 {{{ 
-repositories { 
-.....
-    mavenRepo "http://maven.ala.org.au/repository/"  
-...
+    repositories { 
+    ...
+        mavenRepo "http://maven.ala.org.au/repository/"  
+    ...
 }
 }}}
 
  * Add the plugin as runtime e.g. (check the latest version via [http://maven.ala.org.au/repository/org/grails/plugins/ala-web-theme/ maven repo])
 
- {{{
+{{{
     plugins {
         ...
         runtime ":ala-web-theme:0.1.3"  
