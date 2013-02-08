@@ -7,7 +7,7 @@ The `ala-web-theme` Grails plugin provides the following features to a Grails ap
   * a separate config file `ala-config.groovy` (in `grails-app/conf`)
   * CAS support for auth.ala.org.au integration (incluing libs and web.xml additions)
 
----
+----
 
 To get started, create a blank Grails app (substituting in your new project name):
 
