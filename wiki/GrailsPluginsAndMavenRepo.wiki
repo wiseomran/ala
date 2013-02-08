@@ -6,7 +6,7 @@ How to setup install a grails plugin in maven.ala.org.au so it can be used withi
 
 = Details =
 
-1. Configure plugin `BuildConfig.groovy` by adding:
+1. Configure plugin `BuildConfig.groovy` by adding the `release` plugin:
 
 {{{ 
 grails.project.dependency.resolution = {
@@ -16,11 +16,6 @@ grails.project.dependency.resolution = {
               ":release:2.0.3") {
             export = false
         }
-    }
-}
-grails.project.dependency.distribution = {
-    remoteRepository(id:"ala-repository", url:"scp://maven.ala.org.au:/data/maven") {
-        // authentication is set via ~/.grails/settings.groovy
     }
 }
 }}}
