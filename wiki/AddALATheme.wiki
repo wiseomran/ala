@@ -34,7 +34,7 @@ grails createApp TestApp
 {{{
     plugins {
         ...
-        runtime ":ala-web-theme:0.1.3"  
+        runtime ":ala-web-theme:0.1.8"  
     }
 }}}
 
