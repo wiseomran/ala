@@ -26,7 +26,7 @@ grails.project.dependency.resolution = {
 grails.project.repos.default = "ala-repository"
 grails.project.repos.'ala-repository'.url = "scp://maven.ala.org.au:/data/maven"
 grails.project.repos.'ala-repository'.username = "maven"
-grails.project.repos.'ala-repository'.password = "askSomeForThisPassword"
+grails.project.repos.'ala-repository'.password = "askSomeoneForThisPassword"
 }}}
 
 3. Optionally compile project to get release plugin included:
