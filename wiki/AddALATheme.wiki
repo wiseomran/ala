@@ -34,7 +34,7 @@ grails createApp TestApp
 {{{
     plugins {
         ...
-        runtime ":ala-web-theme:0.1.8"  
+        runtime ":ala-web-theme:0.1.9"  
     }
 }}}
 
@@ -44,4 +44,6 @@ grails createApp TestApp
 grails run-app
 }}} 
 
-and as the Grails output suggests, browse to http://localhost:8080/testApp
+and as the Grails output suggests, browse to http://localhost:8080/testApp.
+
+Check http://maven.ala.org.au/repository/org/grails/plugins/ala-web-theme/ for the latest version of this plugin.
