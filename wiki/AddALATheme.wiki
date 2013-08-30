@@ -17,7 +17,7 @@ To get started, create a blank Grails app (substituting in your new project name
 grails createApp TestApp
 }}}
 
- * cd to TestApp
+ * cd to !TestApp
  * Edit `grails-app/conf/BuildConfig.groovy`
  * Add to the repositories sections
 
