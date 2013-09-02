@@ -1,6 +1,6 @@
 #summary Adding the ALA theme to a new project
 
-== `ala-web-theme` Grails plugin ==
+= `ala-web-theme` Grails plugin =
 
 The `ala-web-theme` Grails plugin provides the following features to a Grails app:
 
@@ -37,8 +37,10 @@ grails createApp TestApp
     }
 }}}
 
-* For CAS config heres an example block to add to the top of Config.groovy. Note the checks for properties allow setting using external config.
+== CAS ==
 
+
+* For CAS config heres an example block to add to the top of Config.groovy. Note the checks for properties allow setting using external config.
 
 {{{
 
