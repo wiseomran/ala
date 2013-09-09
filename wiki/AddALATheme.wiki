@@ -75,7 +75,6 @@ println "[${appName}] (*) grails.config.locations = ${grails.config.locations}"
 
 Add the following block for CAS security (required):
 
-
 {{{
 
 /******************************************************************************\
@@ -115,7 +114,16 @@ if(!security.cas.bypass){
 
 }}}
 
- * Run the app via the built-in tomcat:
+ # Use the bootstrap layout
+
+{{{
+
+mv grails-app/views/layouts/main.gsp.new grails-app/views/layouts/main.gsp
+
+}}}
+
+
+ # Run the app via the built-in tomcat:
 
 {{{
 grails run-app
