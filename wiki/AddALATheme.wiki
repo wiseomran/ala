@@ -12,7 +12,7 @@ The `ala-web-theme` Grails plugin provides the following features to a Grails ap
 
 == Get started ==
 
- # Create a blank Grails app (substituting in your new project name):
+ * Create a blank Grails app (substituting in your new project name):
 
 {{{
 grails createApp TestApp
@@ -39,7 +39,7 @@ grails createApp TestApp
     }
 }}}
 
- # Add the following standard block to the top of your Config.groovy, replacing the appName and ENV_NAME values to suit your app.
+ * Add the following standard block to the top of your Config.groovy, replacing the appName and ENV_NAME values to suit your app.
 
 {{{
 
@@ -71,8 +71,7 @@ println "[${appName}] (*) grails.config.locations = ${grails.config.locations}"
 
 }}}
 
-
- # Add the following block for CAS security (required):
+ * Add the following block for CAS security (required):
 
 {{{
 
@@ -113,13 +112,13 @@ if(!security.cas.bypass){
 
 }}}
 
- # Use the bootstrap layout
+ * Use the bootstrap layout
 
 {{{
 mv grails-app/views/layouts/main.gsp.new grails-app/views/layouts/main.gsp
 }}}
 
- # Run the app via the built-in tomcat:
+ * Run the app via the built-in tomcat:
 
 {{{
 grails run-app
