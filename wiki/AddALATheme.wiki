@@ -35,7 +35,7 @@ grails createApp TestApp
 {{{
     plugins {
         ...
-        runtime ":ala-web-theme:0.1.12"  
+        runtime ":ala-web-theme:0.2.2"  
     }
 }}}
 
@@ -68,44 +68,20 @@ if(System.getenv(ENV_NAME) && new File(System.getenv(ENV_NAME)).exists()) {
 println "[${appName}] (*) grails.config.locations = ${grails.config.locations}"
 }}}
 
- * Add the following block for CAS security (required):
+ * Create a properties file in /data/{appName}/config/${appName}-config.properties:
 
 {{{
 
-/******************************************************************************\
- *  SECURITY
-\******************************************************************************/
-if (!security.cas.uriFilterPattern) {
-    security.cas.uriFilterPattern = ""
-}
-if (!security.cas.loginUrl) {
-    security.cas.loginUrl = "https://auth.ala.org.au/cas/login"
-}
-if (!security.cas.logoutUrl) {
-    security.cas.logoutUrl = "https://auth.ala.org.au/cas/logout"
-}
-if (!security.apikey.serviceUrl) {
-    security.apikey.serviceUrl = "http://auth.ala.org.au/apikey/ws/check?apikey="
-}
-if(!security.cas.appServerName){
-    security.cas.appServerName = "http://devt.ala.org.au:8080"
-}
-if(!security.cas.casServerName){
-    security.cas.casServerName = "https://auth.ala.org.au"
-}
-if(!security.cas.uriExclusionFilterPattern){
-    security.cas.uriExclusionFilterPattern = '/images.*,/css.*,/js.*,/less.*'
-}
-if(!security.cas.authenticateOnlyIfLoggedInPattern){
-    security.cas.authenticateOnlyIfLoggedInPattern = "" // pattern for pages that can optionally display info about the logged-in user
-}
-if(!security.cas.casServerUrlPrefix){
-    security.cas.casServerUrlPrefix = 'https://auth.ala.org.au/cas'
-}
-if(!security.cas.bypass){
-    security.cas.bypass = false
-}
-/******************************************************************************/
+# CAS Config
+casProperties=casServerLoginUrl,serverName,centralServer,casServerName,uriFilterPattern,uriExclusionFilter,authenticateOnlyIfLoggedInFilterPattern,casServerLoginUrlPrefix,gateway,casServerUrlPrefix,contextPath
+serverName=http://localhost:8080
+contextPath=/mobileauth
+casServerName=https://auth.ala.org.au
+uriExclusionFilterPattern=/images.*,/css.*,/js.*,/less.*
+casServerLoginUrl=https://auth.ala.org.au/cas/login
+gateway=true
+casServerUrlPrefix=https://auth.ala.org.au/cas
+security.cas.logoutUrl=https://auth.ala.org.au/cas/logout
 
 }}}
 
