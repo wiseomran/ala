@@ -32,7 +32,7 @@ grails.project.repos.'ala-repository'.password = "askSomeoneForThisPassword"
 3. Optionally compile project to get release plugin included:
 
 {{{
-grails compile
+grails prod compile
 }}}
 
 4. Deploy plugin to ALA maven server:
