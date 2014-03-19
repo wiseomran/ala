@@ -1,3 +1,0 @@
-#summary Common page wrappers for the Atlas
-
-TBC
