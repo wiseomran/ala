@@ -1,3 +1,0 @@
-#summary Common stylesheets, images and scripts
-
-TBC
