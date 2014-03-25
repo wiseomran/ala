@@ -5,8 +5,6 @@
 
 Common webapp infrastructure
  * [Authentication]
- * [Styles Stylesheets, images and scripts]
- * [Feedback Feedback services]
  * [Logging]
  * [GrailsPluginsAndMavenRepo Grails Plugins and Maven Repositories]
  * [AddALATheme ALA Theme Grails plugin]
