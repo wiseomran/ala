@@ -68,7 +68,7 @@ if(System.getenv(ENV_NAME) && new File(System.getenv(ENV_NAME)).exists()) {
 println "[${appName}] (*) grails.config.locations = ${grails.config.locations}"
 }}}
 
- * Create a properties file in /data/{appName}/config/${appName}-config.properties:
+ * (Optionally*) Create a properties file in /data/{appName}/config/${appName}-config.properties or put the equivilent vars into the `conf/Config.groovy` file:
 
 {{{
 
@@ -100,3 +100,5 @@ grails run-app
 and as the Grails output suggests, browse to http://localhost:8080/testApp.
 
 Check http://maven.ala.org.au/repository/org/grails/plugins/ala-web-theme/ for the latest version of this plugin.
+
+* If no `config.security.cas` settings are detected, then the plugin will "bypass" CAS.
