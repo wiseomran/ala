@@ -79,7 +79,7 @@ contextPath=/mobileauth
 casServerName=https://auth.ala.org.au
 uriExclusionFilterPattern=/images.*,/css.*,/js.*,/less.*
 casServerLoginUrl=https://auth.ala.org.au/cas/login
-gateway=true
+gateway=false
 casServerUrlPrefix=https://auth.ala.org.au/cas
 security.cas.logoutUrl=https://auth.ala.org.au/cas/logout
 
