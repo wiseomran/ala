@@ -1,0 +1,1 @@
+The Atlas uses the [Central Authentication Service](http://www.jasig.org/cas) to provide single sign-on authentication for ALA applications. The app integration of CAS is described [here](http://code.google.com/p/ala-bie/wiki/Authentication).
